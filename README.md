@@ -1,16 +1,25 @@
-# React + Vite
+# Spendify 💸
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Spendify is a modern personal finance tracker that helps you manage your income and expenses with ease. It provides a clean and intuitive interface along with real-time financial insights to help you understand where your money goes.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Add, edit, and delete transactions
+- Track income and expenses separately
+- Real-time financial summary
+- Interactive pie chart visualization
+- Persistent data using localStorage
+- Clean and responsive UI
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React.js
+- Context API (State Management)
+- Recharts (Data Visualization)
+- CSS (Responsive Design)
 
-## Expanding the ESLint configuration
+## 📊 What you can do
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Monitor your spending habits
+- Analyze income vs expenses visually
+- Keep track of your financial history
