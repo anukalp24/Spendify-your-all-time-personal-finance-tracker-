@@ -9,5 +9,285 @@
 <body>
    <div id="root"></div> 
     <script type="module" src="/src/main.jsx"></script>
+
+
+     
+    <script>
+
+//     console.log("start")
+
+//     setTimeout(() => {
+//       console.log("time out")
+//     }, 0);
+
+//     Promise.resolve().then(()=>{
+//       console.log("async start")
+//     })
+
+
+
+// async function test() {
+//   console.log("async start")
+//   await Promise.resolve()
+
+//   console.log("async after await")
+//   Promise.resolve().then(()=>{
+//     console.log("promise-2")
+//   })
+// }
+
+
+// test()
+
+// console.log("end")
+
+
+
+
+
+
+
+// Start
+// async start
+// timeout
+
+// async start
+// async after await
+// end
+// promise2
+
+
+
+
+
+
+
+
+
+
+
+
+// let arr = [1,2,3,4,53]
+
+
+
+
+
+
+// let arr22 = arr.map((index , val)=>{
+//   return [val , index]
+// })
+// console.log(arr22)
+
+
+
+// var arrA = [1,2];
+// // arrA = arrA.slice();
+// arrA[0] = 42
+// console.log(arrA) ZX
+// // console.log(arrB)
+
+
+
+
+
+
+// function bb (){
+
+//   var b = 33
+//   let c = 22
+//   console.log(c)
+//   console.log(b)
+//   return [b,c]
+// }
+
+//  let vv = bb()
+//  console.log(vv)
+
+
+
+
+
+// function demo(){
+//   let x = 1
+//   return function(){
+//     return x++
+//   }
+// }
+
+
+
+// const d1 = demo()
+// const d2 = demo()
+
+
+// console.log(d1)
+// console.log(d1)
+// console.log(d2)
+
+
+
+// let y = 1
+// y++
+// console.log(y)
+
+
+
+
+// let x = 1;
+// let y = x++;
+// console.log(y)
+// console.log(x)
+
+// // console.log(y+)
+
+
+
+// let value = 1 
+// console.log( value = value + 1)
+// console.log(c)
+// console.log(value)
+
+
+
+
+
+
+
+// ques 1 :-  
+
+// let a = 1
+// let b = a++  +  ++a
+// console.log(a)
+// console.log(b)
+
+
+
+
+
+
+
+
+// function test(){
+//   let x = 1
+//   return function(){
+//     return x++ + ++x
+//   }
+// }
+
+// const t = test()
+
+// console.log(t())
+// console.log(t())
+// // ques baby
+
+
+
+// let a = 1
+
+// let b = ++a  + a++  + ++a
+// console.log(a)
+// console.log(b)
+
+// 2 + 2  + 4
+// correct ans given
+
+// // q2
+
+// let x = 2
+// let y = x++  + (x = x+2) +  ++x
+
+
+// 6
+
+// // y 2 + 5 +  + 1
+// console.log(x)
+// console.log(y)
+
+
+
+
+
+// function outer(){
+//   let x = 1
+//   return function (){
+//     x++
+//     return x
+//   }
+// }
+
+// const a = outer()
+// const b = outer()
+
+// console.log(a())
+// console.log(a())
+
+// console.log(b())
+
+
+
+
+
+
+
+
+
+// function test() {
+//   let x = 1;
+//   return function () {
+//     return x++ + ++x + x;
+//   };
+// }
+
+// const t = test();
+
+// console.log(t());
+// console.log(t());
+
+
+
+function outer(){
+  let x = 1
+
+  function a(){
+    return x++ + ++x
+  }
+
+
+
+  function b(){
+    x = x+2
+    return x++   +   x
+  }
+
+  return [a,b]
+}
+
+const shiva = outer()
+console.log(shiva[0]())
+console.log(shiva[1]())
+console.log(shiva[0]())
+
+// const a = [shiva[0]]
+// const b = [shiva[1]]
+
+// console.log(a)
+// console.log(b)
+// console.log(a)
+
+
+
+
+
+
+
+
+
+
+  </script>
+
+
+
+
 </body>
 </html>

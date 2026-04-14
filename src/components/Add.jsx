@@ -30,6 +30,9 @@ const Add = () => {
       return;
     }
     setaddtransactions([...addtransactions, addtransaction]);
+    document.getElementById("recent").scrollIntoView({
+      behavior: "smooth"
+    });
     console.log(addtransactions);
 
     setaddtransaction({
@@ -108,8 +111,9 @@ const Add = () => {
         </div>{" "}
         {/* input-boxes */}
         <div className="add-btn">
-          <button onClick={handleadd} id="add">
-            Add Transaction{" "}
+          <button onDragEnterCapture
+          ={handleadd} onClick={handleadd} id="add">
+            Add Transaction
           </button>
         </div>
       </div>{" "}
