@@ -246,27 +246,27 @@
 
 
 
-function outer(){
-  let x = 1
+// function outer(){
+  // let x = 1/
 
-  function a(){
-    return x++ + ++x
-  }
+  // function a(){
+  //   return x++ + ++x
+  // }
 
 
 
-  function b(){
-    x = x+2
-    return x++   +   x
-  }
+  // function b(){
+  //   x = x+2
+  //   return x++   +   x
+  // }
 
-  return [a,b]
-}
+//   return [a,b]
+// }
 
-const shiva = outer()
-console.log(shiva[0]())
-console.log(shiva[1]())
-console.log(shiva[0]())
+// const shiva = outer()
+// console.log(shiva[0]())
+// console.log(shiva[1]())
+// console.log(shiva[0]())
 
 // const a = [shiva[0]]
 // const b = [shiva[1]]

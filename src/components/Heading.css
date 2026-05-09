@@ -2,7 +2,6 @@ header {
   border: 1px solid black;
   text-align: center;
   color: white;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   background: linear-gradient(135deg, #020617, #1e293b, #1e40af);
 }
 

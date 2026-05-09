@@ -13,15 +13,16 @@ const History = () => {
 
   let filteredData = addtransactions.filter((item) => {
     if (filter === "all") {
+      console.log("hello devanshu and naukalp chutiye")
       return true;
     } else if (filter === "income") {
       return item.type === "income";
     } else if (filter === "expense") {
       return item.type === "expense";
     }
+    
   });
-  console.log(filteredData);
-
+ 
   // true = keeps   , false = remove
   const handleDelete = (index) => {
     const newitem = addtransactions.filter((item, i) => {
@@ -35,7 +36,7 @@ const History = () => {
     const newedit = addtransactions.filter((item, i) => i !== index);
     setaddtransactions(newedit);
   };
-
+// localStorage.clear()
   return (
     <div>
       <div className="history-container">

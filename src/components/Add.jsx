@@ -7,18 +7,16 @@ import "react-datepicker/dist/react-datepicker.css";
 
 const Add = () => {
   // this is temporary and we need a second array.
-  const { addtransaction, setaddtransaction } = useContext(info);
-  const { addtransactions, setaddtransactions } = useContext(info);
+  const { addtransaction, setaddtransaction  , addtransactions , setaddtransactions} = useContext(info);
 
   const handlechange = (e) => {
     if (e.target.name === "amount" && e.target.value.length > 21) return;
 
     setaddtransaction({
       ...addtransaction,
-      [e.target.name]: e.target.value,
+      [e.target.name]: e.target.value
     });
   };
-
   const handleadd = () => {
     if (
       addtransaction.title.trim() === "" ||
@@ -33,8 +31,8 @@ const Add = () => {
     document.getElementById("recent").scrollIntoView({
       behavior: "smooth"
     });
-    console.log(addtransactions);
-
+    // console.log(addtransactions);
+    
     setaddtransaction({
       ...addtransaction,
       title: "",
@@ -42,6 +40,8 @@ const Add = () => {
       date: "",
     });
   };
+
+
 
   useEffect(() => {
     console.log(addtransactions);

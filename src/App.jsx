@@ -11,6 +11,7 @@ import {info} from './components'
 
 // this is one object isnide it there are many content
 function App() {
+  
      const [addtransaction, setaddtransaction] = useState({
           type: "income",
           title: "",

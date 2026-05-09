@@ -14,11 +14,13 @@ addtransactions.forEach((val)=>{
   if(val.type === "income"){
     totalincome = totalincome + Number(val.amount)
     totalbalance = totalbalance + Number(val.amount)
+    // console.log(val)
   }
 
   else{
     totalexpenses = totalexpenses + Number(val.amount)
     totalbalance = totalbalance - Number(val.amount)
+    // console.log(val)
   }
 })
 
@@ -34,9 +36,7 @@ return num
 }
 
 
-
   return (
-   
 <div>
 
 <div className="summary-content">
